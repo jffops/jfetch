@@ -9,7 +9,7 @@
 #include <sys/sysinfo.h>
 #include <sys/statvfs.h>
 
-#include "jorb.c" // Jorb animation object 
+#include "jorb.h" // Jorb animation object 
 #include "jfetch.h"
 
 // IMPLEMENTED:

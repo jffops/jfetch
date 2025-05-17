@@ -51,10 +51,10 @@ print(convert_frame("./images/frame01.png"))
 #"""
 frame_paths = [f"./images/frame{i:02}.png" for i in range(1, 40)]
 
-cfile = open("../jorb.c", "w")
+cfile = open("../jorb.h", "w")
 
 cfile.write('#include "jfetch.h"\n\n')
-cfile.write('static animation_object jorb = {\n')
+cfile.write('animation_object jorb = {\n')
 cfile.write('    .current_frame = 0,\n')
 cfile.write('    .frame_count = 39,\n')
 cfile.write('    .frames = {\n')

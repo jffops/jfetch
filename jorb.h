@@ -2,7 +2,7 @@
 #define JORB_H
 #include "jfetch.h"
 
-static animation_object jorb = {
+animation_object jorb = {
     .current_frame = 0,
     .frame_count = 39,
     .frames = {

@@ -53,6 +53,8 @@ frame_paths = [f"./images/frame{i:02}.png" for i in range(1, 40)]
 
 cfile = open("../jorb.h", "w")
 
+cfile.write('#ifndef JORB_H\n')
+cfile.write('#define JORB_H\n')
 cfile.write('#include "jfetch.h"\n\n')
 cfile.write('animation_object jorb = {\n')
 cfile.write('    .current_frame = 0,\n')
@@ -67,6 +69,7 @@ for fp in frame_paths:
     
 cfile.write('    }\n')
 cfile.write('};\n')
+cfile.write('#endif\n')
 cfile.close()
 
 print(f"{max_len=}")
